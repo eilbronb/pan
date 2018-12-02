@@ -4,21 +4,23 @@
     connection: local
     gather_facts: no
 
-  - name: show list of all interfaces
-    panos_op:
-      ip_address: '{{ ip_address }}'
-      username: '{{ username }}'
-      password: '{{ password }}'
-      cmd: 'show interfaces all'
+    tasks:
 
-  - name: show system info
-    panos_op:
-      ip_address: '{{ ip_address }}'
-      username: '{{ username }}'
-      password: '{{ password }}'
-      cmd: 'show system info'
-      register: output
+    - name: show list of all interfaces
+      panos_op:
+        ip_address: '{{ ip_address }}'
+        username: '{{ username }}'
+        password: '{{ password }}'
+        cmd: 'show interfaces all'
+
+    - name: show system info
+      panos_op:
+        ip_address: '{{ ip_address }}'
+        username: '{{ username }}'
+        password: '{{ password }}'
+        cmd: 'show system info'
+        register: output
   
-  - name: Print output
-    debug:
-    msg: '{{ output }}'
+    - name: Print output
+      debug:
+        msg: '{{ output }}'
