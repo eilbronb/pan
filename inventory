@@ -37,4 +37,5 @@ password=admin
 ansible_user=admin
 ansible_password=admin
 ansible_port=22
+ip_address=10.10.10.35
 
