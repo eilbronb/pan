@@ -5,6 +5,5 @@ pan1 ip_address=10.10.10.35
 [PAN:vars]
 username=admin
 password=admin
-
 ansible_python_interpreter=/usr/bin/python3.6
 
