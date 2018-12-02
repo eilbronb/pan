@@ -30,8 +30,6 @@ SCS9
 
 [PAN]
 pan1 ansible_host=10.10.10.35
-username=admin
-password=admin
 
 
 [PAN:vars]
