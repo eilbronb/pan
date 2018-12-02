@@ -19,8 +19,8 @@
         username: "{{ username }}"
         password: "{{ password }}"
         cmd: "show system info"
-        register: output
+        #register: output
   
-    - name: Print output
-      debug:
-        msg: "{{ output }}"
+    # - name: Print output
+    #   debug:
+    #     msg: "{{ output }}"
