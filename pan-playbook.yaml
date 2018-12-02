@@ -23,7 +23,7 @@
   
     - name: Print output
       debug:
-        msg: "{{ item.key }}" ,"{{ item.value }}"
+        msg: "{{ item.key }} , {{ item.value }}"
 
       when:
          - "'sw-version' in item.key"
