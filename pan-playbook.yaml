@@ -31,9 +31,18 @@
         ip_address: "{{ ip_address }}"
         username: "{{ username }}"
         password: "{{ password }}"
-        xpath: "set network interface loopback units loopback.33 ip 1.1.1.5/32"
-        #xpath: "/config/devices/entry[@name='localhost.localdomain']/network/interface/loopback/units/entry[@name='loopback.32']/ip"
-        #element: "<entry name='1.1.1.1/32'/>"
+        xpath: "/config/devices/entry[@name='localhost.localdomain']/network/interface/loopback/units/entry[@name='loopback.33']/ip"
+        element: "<entry name='1.1.1.10/32'/>"
+        xpath: "/config/devices/entry[@name='localhost.localdomain']/network/interface/loopback/units/entry[@name='loopback.34']/ip"
+        element: "<entry name='1.1.1.20/32'/>"
+        xpath: "/config/devices/entry[@name='localhost.localdomain']/network/interface/loopback/units/entry[@name='loopback.35']/ip"
+        element: "<entry name='1.1.1.30/32'/>"
+        xpath: "/config/devices/entry[@name='localhost.localdomain']/network/interface/loopback/units/entry[@name='loopback.36']/ip"
+        element: "<entry name='1.1.1.40/32'/>"
+        xpath: "/config/devices/entry[@name='localhost.localdomain']/network/interface/loopback/units/entry[@name='loopback.37']/ip"
+        element: "<entry name='1.1.1.50/32'/>"
+        xpath: "/config/devices/entry[@name='localhost.localdomain']/network/interface/loopback/units/entry[@name='loopback.38']/ip"
+        element: "<entry name='1.1.1.60/32'/>"
 
     - name: Commit
       panos_commit:
