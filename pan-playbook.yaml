@@ -23,4 +23,8 @@
   
     - name: Print output
       debug:
-        msg: "{{ output.stdout.system }}"
+        msg: "{{ item.key }}"
+
+      when:
+         - "'sw-version' in item.key"
+      with_dict: "{{ output.stdout }}"
