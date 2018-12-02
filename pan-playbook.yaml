@@ -11,7 +11,7 @@
         ip_address: "{{ ip_address }}"
         username: "{{ username }}"
         password: "{{ password }}"
-        cmd: "show interfaces all"
+        cmd: "show interface all"
 
     - name: show system info
       panos_op:
