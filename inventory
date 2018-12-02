@@ -1,5 +1,5 @@
 [PAN]
-pan1 ansible_host=10.10.10.35
+pan1 ip_address=10.10.10.35
 
 
 [PAN:vars]
