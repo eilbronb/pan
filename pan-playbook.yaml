@@ -23,8 +23,4 @@
   
     - name: Print output
       debug:
-        msg: "{{ item.key }} , {{ item.value['sw-version'] }}"
-
-      when:
-         - "'sw-version' in item.key"
-      with_dict: "{{ output.stdout }}"
+        msg: "{{ output.stdout }}"
