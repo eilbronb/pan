@@ -33,7 +33,7 @@ pan1 ansible_host=10.10.10.35
 
 
 [PAN:vars]
-username=admin1
+username=admin
 password=admin
 ip_address=10.10.10.35
 ansible_python_interpreter=/usr/bin/python3.6
