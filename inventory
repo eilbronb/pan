@@ -30,13 +30,13 @@ SCS9
 
 [PAN]
 pan1 ansible_host=10.10.10.35
+username=admin
+password=admin
+
 
 [PAN:vars]
 username=admin
 password=admin
-ansible_user=admin
-ansible_password=admin
-ansible_port=22
 ip_address=10.10.10.35
 ansible_python_interpreter=/usr/bin/python3.6
 
